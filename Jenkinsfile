@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Terraform Init') {
             steps {
-                bat 'cd D:\PROJECT\Terraform\wordpress && terraform init'
+                bat 'cd D:\\PROJECT\\Terraform\\wordpress && terraform init'
             }
         }
         stage('Terraform Apply') {
             steps {
-                bat 'cd D:\PROJECT\Terraform\wordpress && terraform apply -auto-approve'
+                bat 'cd D:\\PROJECT\\Terraform\\wordpress && terraform apply -auto-approve'
             }
         }
     }
